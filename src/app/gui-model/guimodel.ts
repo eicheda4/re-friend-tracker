@@ -110,23 +110,49 @@ export class GuiModel {
                     "url": "/group",
                     "formFieldList": [ 
                     { 
-                    "id": "name",
-                    "type": "text",
-                    "name": "GroupName",
-                    "width": 2,
-                    "required": true
+                        "id": "name",
+                        "type": "text",
+                        "name": "GroupName",
+                        "width": 2,
+                        "required": true
                     }, 
                     { 
-                    "type": "deleteButton",
-                    "name": "Delete"
+                        "type": "deleteButton",
+                        "name": "Delete"
                     },
                     { 
-                    "type": "cancelButton",
-                    "name": "Cancel"
+                        "type": "cancelButton",
+                        "name": "Cancel"
                     },
                     {
-                    "type": "okButton",
-                    "name": "Ok"
+                        "type": "okButton",
+                        "name": "Ok"
+                    } 
+                ]
+                },
+                { 
+                        "id": "ActivityForm",
+                        "title": "Activity",
+                        "url": "/activity",
+                        "formFieldList": [ 
+                    { 
+                        "id": "name",
+                        "type": "text",
+                        "name": "Activity",
+                        "width": 2,
+                        "required": true
+                    }, 
+                    { 
+                        "type": "deleteButton",
+                        "name": "Delete"
+                    },
+                    { 
+                        "type": "cancelButton",
+                        "name": "Cancel"
+                    },
+                    {
+                        "type": "okButton",
+                        "name": "Ok"
                     } 
                     ]
                     },
@@ -180,11 +206,18 @@ export class GuiModel {
                             "page": "locationspage",
                         },
                         { 
-                        "type": "button", 
-                        "name": "Groups",
-                        "icon": "fa-weixin",
-                        "color": "green",
-                        "page": "groupspage", 
+                            "type": "button", 
+                            "name": "Groups",
+                            "icon": "fa-weixin",
+                            "color": "green",
+                            "page": "groupspage", 
+                    },
+                    { 
+                            "type": "button", 
+                            "name": "Activity",
+                            "icon": "fas fa-calendar-alt",
+                            "color": "red",
+                            "page": "activitypage", 
                     },
                     ]
                 },
@@ -267,9 +300,36 @@ export class GuiModel {
                             "form": {
                             "form": "GroupForm"
                             }
-                        },
+                        }
                      ]
-                 }
+                 },
+                 { 
+                    "id": "activitypage", 
+                    "elementList": [ 
+                        { 
+                            "type": "backbutton",
+                     }, 
+                    { 
+                        "type": "newButton",
+                         "name": "AddActivity",
+                         "icon": "fas fa-calendar-alt",
+                         "color": "red",
+                         "form": {
+                            "form": "ActivityForm"
+                    }
+                    },
+                {
+                   "type": "list",
+                   "icon": "fas fa-calendar-alt",
+                   "color": "red",
+                   "search": true,
+                   "url": "/activity",
+                   "form": {
+                   "form": "ActivityForm"
+                   }
+		}
+	]
+}
             ]
         }
     };
