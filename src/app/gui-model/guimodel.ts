@@ -35,6 +35,14 @@ export class GuiModel {
                             "required": true 
                         },
                         {
+                            "id": "group",
+                            "type": "autocomplete",
+                            "name": "Group",
+                            "url": "/group",
+                            "form": "GroupForm",
+                            "width": 2
+                        },
+                        {
                             "id":   "location",
                             "type": "autocomplete",
                             "name": "Location",
@@ -67,7 +75,7 @@ export class GuiModel {
                         {
                             "type": "okButton",
                             "name": "Ok"
-                        }
+                        }                        
                     ]
                 },
                 {
@@ -238,7 +246,8 @@ export class GuiModel {
                 { 
                     "id": "groupspage", 
                     "elementList": [ 
-                        { "type": "backbutton",
+                        { 
+                            "type": "backbutton",
                      }, 
                     { 
                         "type": "newButton",
@@ -248,7 +257,17 @@ export class GuiModel {
                          "form": {
                             "form": "GroupForm"
                             }
-                         }
+                         },
+                         {
+                            "type": "list",
+                            "icon": "fa-weixin",
+                            "color": "wisteria",
+                            "search": true,
+                            "url": "/group",
+                            "form": {
+                            "form": "GroupForm"
+                            }
+                        },
                      ]
                  }
             ]
