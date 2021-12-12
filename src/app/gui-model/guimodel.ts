@@ -173,6 +173,14 @@ export class GuiModel {
                         "required": true
                     },
                     {
+                        "id": "location",
+                        "type": "autocomplete",
+                        "name": "Location",
+                        "url": "/location",
+                        "form": "LocationForm",
+                        "width": 2
+                    },
+                    {
                         "id": "activitycomment",
                         "type": "text",
                         "name": "Comments",
@@ -308,10 +316,37 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/location",
+                            "page": "locationspage2"
+                            //"form": {
+                                //"form": "LocationForm"
+                            //}
+                        },
+                        
+                    ]
+                },
+                {
+                    "id": "locationspage2",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "EditLocation",
+                            "icon": "fa-home",
+                            "color": "green",
+                            "width": 2,
                             "form": {
                                 "form": "LocationForm"
                             }
                         },
+                        {
+                            "type": "list",
+                            "icon": "fas fa-calendar-alt",
+                            "color": "red",
+                            "search": true,
+                            "url": "/location/:locationKey/activity",
+                            },
                     ]
                 },
                 { 
