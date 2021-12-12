@@ -57,7 +57,7 @@ export class GuiModel {
                             "width": 2
                         },
                         {
-                            "id": "comment",
+                            "id": "friendcomment",
                             "type": "text",
                             "name": "Comments",
                             "width": 2,
@@ -91,6 +91,14 @@ export class GuiModel {
                             "required": true
                         },
                         {
+                            "id": "locationcomment",
+                            "type": "text",
+                            "name": "Comments",
+                            "width": 2,
+                            "height": 4,
+                            "maxLength": 5000,
+                        }, 
+                        {
                             "type": "deleteButton",
                             "name": "Delete"
                         },
@@ -115,7 +123,22 @@ export class GuiModel {
                         "name": "GroupName",
                         "width": 2,
                         "required": true
-                    }, 
+                    },
+                    { 
+                        "id": "crationdate",
+                        "type": "date",
+                        "name": "CreationDate",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "groupcomment",
+                        "type": "text",
+                        "name": "Comments",
+                        "width": 2,
+                        "height": 4,
+                        "maxLength": 5000,
+                    },  
                     { 
                         "type": "deleteButton",
                         "name": "Delete"
@@ -141,6 +164,21 @@ export class GuiModel {
                         "name": "Activity",
                         "width": 2,
                         "required": true
+                    },
+                    { 
+                        "id": "activitydate",
+                        "type": "date",
+                        "name": "Date",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "activitycomment",
+                        "type": "text",
+                        "name": "Comments",
+                        "width": 2,
+                        "height": 4,
+                        "maxLength": 5000,
                     }, 
                     { 
                         "type": "deleteButton",
