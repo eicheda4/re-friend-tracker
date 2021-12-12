@@ -447,6 +447,7 @@ export class GuiModel {
                         }
                     ]
                 },
+                                
                 {
                     "id": "activitypage",
                     "elementList": [
