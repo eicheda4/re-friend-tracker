@@ -9,7 +9,7 @@ export class GuiModel {
             "title": "Davides Friend Tracker 3.0",
             "formList": [
                 {
-                    "id": "FriendForm",
+                    "id": "FriendForm", 
                     "title": "Friend",
                     "url": "/friend",
                     "formFieldList": [
@@ -332,7 +332,7 @@ export class GuiModel {
                             "type": "backbutton",
                         },
                         {
-                            "type": "newButton",
+                            "type": "button",
                             "name": "EditFriend",
                             "icon": "fas fa-pen",
                             "color": "green",
@@ -399,7 +399,7 @@ export class GuiModel {
                             "type": "backbutton",
                         },
                         {
-                            "type": "newButton",
+                            "type": "button",
                             "name": "EditLocation",
                             "icon": "fa-home",
                             "color": "green",
@@ -482,7 +482,7 @@ export class GuiModel {
                             "type": "backbutton",
                         },
                         {
-                            "type": "newButton",
+                            "type": "button",
                             "name": "EditActivity",
                             "icon": "fas fa-calendar-alt",
                             "color": "green",
