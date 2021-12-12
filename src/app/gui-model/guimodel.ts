@@ -284,7 +284,7 @@ export class GuiModel {
                             "type": "button",
                             "name": "Groups",
                             "icon": "fa-weixin",
-                            "color": "green",
+                            "color": "magenta",
                             "page": "groupspage",
                         },
                         {
@@ -334,7 +334,7 @@ export class GuiModel {
                         {
                             "type": "newButton",
                             "name": "EditFriend",
-                            "icon": "fa-user",
+                            "icon": "fas fa-pen",
                             "color": "green",
                             "form": {
                                 "form": "FriendForm"
@@ -438,7 +438,7 @@ export class GuiModel {
                         {
                             "type": "list",
                             "icon": "fa-weixin",
-                            "color": "green",
+                            "color": "magenta",
                             "search": true,
                             "url": "/group",
                             "form": {
@@ -457,7 +457,7 @@ export class GuiModel {
                             "type": "newButton",
                             "name": "AddActivity",
                             "icon": "fas fa-calendar-alt",
-                            "color": "red",
+                            "color": "green",
                             "form": {
                                 "form": "ActivityForm"
                             }
@@ -485,7 +485,7 @@ export class GuiModel {
                             "type": "newButton",
                             "name": "EditActivity",
                             "icon": "fas fa-calendar-alt",
-                            "color": "red",
+                            "color": "green",
                             "form": {
                                 "form": "ActivityForm"
                             }
@@ -495,7 +495,7 @@ export class GuiModel {
                             "id": "addfriend",
                             "name": "AddFriend",
                             "icon": "fa-user",
-                            "color": "red",
+                            "color": "green",
                             "form": {
                                 "form": "AddFriendForm"
                             }
