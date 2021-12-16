@@ -401,7 +401,7 @@ export class GuiModel {
                         {
                             "type": "button",
                             "name": "EditLocation",
-                            "icon": "fa-home",
+                            "icon": "fas fa-pen",
                             "color": "green",
                             "width": 2,
                             "form": {
@@ -485,7 +485,7 @@ export class GuiModel {
                         {
                             "type": "button",
                             "name": "EditActivity",
-                            "icon": "fas fa-calendar-alt",
+                            "icon": "fas fa-pen",
                             "color": "green",
                             "form": {
                                 "form": "ActivityForm"
